@@ -1,0 +1,16 @@
+{
+  "name": "netlify-apollo-server-starter",
+  "version": "0.0.1",
+  "dependencies": {
+    "apollo-server-lambda": "^2.21.0",
+    "graphql": "^15.5.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development npm run start:lambda",
+    "start:lambda": "netlify-lambda serve src/lambda",
+    "build:lambda": "netlify-lambda build  src/lambda"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^1.4.5"
+  }
+}
